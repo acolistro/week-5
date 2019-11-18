@@ -11,4 +11,9 @@ describe('Age', () => {
       var negativeAge = new Age(-20);
       expect(negativeAge.negativeCheck()).toEqual("age is negative")
     });
+
+    test('should convert age to solar age', () => {
+      var age = new Age(25);
+      expect(age.mercuryAge).toEqual(25 / 0.24);
+    });
 });

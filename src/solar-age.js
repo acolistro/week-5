@@ -1,5 +1,6 @@
-export function Age(earthAge) {
+export function Age(earthAge, mercuryAge) {
   this.earthAge = earthAge;
+  this.mercuryAge = mercuryAge;
 };
 
 Age.prototype.negativeCheck = function() {
