@@ -8,3 +8,7 @@ Age.prototype.negativeCheck = function() {
     return "age is negative";
   }
 };
+
+Age.prototype.toSolar = function() {
+  this.mercuryAge = (this.earthAge / 0.24);
+};

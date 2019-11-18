@@ -13,7 +13,8 @@ describe('Age', () => {
     });
 
     test('should convert age to solar age', () => {
-      var age = new Age(25);
-      expect(age.mercuryAge).toEqual(25 / 0.24);
+      var age = new Age(25)
+      var mercuryAge = age.toSolar();
+      expect(mercuryAge).toEqual(25 / 0.24);
     });
 });
