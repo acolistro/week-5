@@ -54,13 +54,13 @@ export class Age {
     return this.venusYearsLeft;
   }
 
-  marsExpect() {
-  this.marsAge = (this.earthAge / 1.88);
-  return this.marsAge;
-}
+    marsExpect() {
+    this.marsYearsLeft = ((75 * 1.88) - (this.earthAge / 1.88));
+    return this.marsYearsLeft;
+  }
 
-  jupiterExpect() {
-  this.jupiterAge = (this.earthAge / 11.86);
-  return this.jupiterAge;
-}
+    jupiterExpect() {
+    this.jupiterYearsLeft = ((75 * 11.86) - (this.earthAge / 11.86));
+    return this.jupiterYearsLeft;
+  }
 };
