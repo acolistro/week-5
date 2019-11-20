@@ -45,15 +45,14 @@ export class Age {
   }
 
     mercuryExpect() {
-    //this.mercuryAge = (this.earthAge / 0.24);
     this.mercuryYearsLeft = ((75 * 0.24) - (this.earthAge / 0.24));
     return this.mercuryYearsLeft;
   }
 
-  venusExpect() {
-  this.venusAge = (this.earthAge / 0.62);
-  return this.venusAge;
-}
+    venusExpect() {
+    this.venusYearsLeft = ((75 * 0.62) - (this.earthAge / 0.62));
+    return this.venusYearsLeft;
+  }
 
   marsExpect() {
   this.marsAge = (this.earthAge / 1.88);
