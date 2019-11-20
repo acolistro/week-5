@@ -1,4 +1,4 @@
-import { Age } from '../src/solar-age.js';
+import { Age } from './../src/solar-age.js';
 
 describe('Age', () => {
 
@@ -38,7 +38,7 @@ describe('Age', () => {
 
     test('should determine years left based on life expectancy', () => {
       const age = new Age(25)
-      const lifeLeft = age.lifeLeft();
+      const lifeLeft = age.lifeExpect();
       expect(lifeLeft).toEqual(75 - 25);
     });
 });
