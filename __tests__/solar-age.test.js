@@ -36,9 +36,15 @@ describe('Age', () => {
       expect(jupiterAge).toEqual(25 / 11.86);
     });
 
-    test('should determine years left based on life expectancy', () => {
+    test('should determine years left on earth based on life expectancy', () => {
       const age = new Age(25)
-      const lifeLeft = age.lifeExpect();
-      expect(lifeLeft).toEqual(75 - 25);
+      const earthYearsLeft = age.earthExpect();
+      expect(earthYearsLeft).toEqual(75 - 25);
+    });
+
+    test('should determine years left on mercury based on life expectancy', () => {
+      const age = new Age(25)
+      const mercuryYearsLeft = age.mercuryExpect();
+      expect(mercuryYearsLeft).toEqual((75 * 0.24) - (25 / 0.24));
     });
 });

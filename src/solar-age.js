@@ -1,19 +1,24 @@
 export class Age {
-  constructor(earthAge, mercuryAge, venusAge, marsAge, jupiterAge, lifeLeft) {
+  constructor(earthAge, mercuryAge, venusAge, marsAge, jupiterAge, earthYearsLeft, mercuryYearsLeft) {
     this.earthAge = earthAge;
     this.mercuryAge = mercuryAge;
     this.venusAge = venusAge;
     this.marsAge = marsAge;
     this.jupiterAge = jupiterAge;
-    this.lifeLeft = lifeLeft;
+    this.earthYearsLeft = earthYearsLeft;
+    this.mercuryYearsLeft = mercuryYearsLeft;
+    this.earthYearsLeft = earthYearsLeft;
+    this.earthYearsLeft = earthYearsLeft;
+    this.earthYearsLeft = earthYearsLeft;
   }
 
+//Test to ensure proper type
   negativeCheck() {
   if (this.earthAge < 0) {
     return "age is negative";
     }
   }
-
+//methods to calculate solar age on each planet
     toMercury() {
     this.mercuryAge = (this.earthAge / 0.24);
     return this.mercuryAge;
@@ -33,9 +38,30 @@ export class Age {
     this.jupiterAge = (this.earthAge / 11.86);
     return this.jupiterAge;
   }
-
-    lifeExpect() {
-    this.lifeLeft = (75 - this.earthAge);
-    return this.lifeLeft;
+//methods to determine years left to live on each planet
+    earthExpect() {
+    this.earthLifeLeft = (75 - this.earthAge);
+    return this.earthLifeLeft;
   }
+
+    mercuryExpect() {
+    //this.mercuryAge = (this.earthAge / 0.24);
+    this.mercuryYearsLeft = ((75 * 0.24) - (this.earthAge / 0.24));
+    return this.mercuryYearsLeft;
+  }
+
+  venusExpect() {
+  this.venusAge = (this.earthAge / 0.62);
+  return this.venusAge;
+}
+
+  marsExpect() {
+  this.marsAge = (this.earthAge / 1.88);
+  return this.marsAge;
+}
+
+  jupiterExpect() {
+  this.jupiterAge = (this.earthAge / 11.86);
+  return this.jupiterAge;
+}
 };
