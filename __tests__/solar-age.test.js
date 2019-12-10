@@ -72,4 +72,22 @@ describe('Age', () => {
       const earthYearsPast = age.earthBeyondAge();
       expect(earthYearsPast).toEqual(85 - 75);
     });
+
+    test('should determine years past life expectancy on Venus', () => {
+      const age = new Age(85)
+      const venusYearsPast = age.venusBeyondAge();
+      expect(venusYearsPast).toEqual(85 - 75);
+    });
+
+    test('should determine years past life expectancy on Mars', () => {
+      const age = new Age(85)
+      const marsYearsPast = age.marsBeyondAge();
+      expect(marsYearsPast).toEqual(85 - 75);
+    });
+
+    test('should determine years past life expectancy on Jupiter', () => {
+      const age = new Age(85)
+      const jupiterYearsPast = age.jupiterBeyondAge();
+      expect(jupiterYearsPast).toEqual(85 - 75);
+    });
 });
