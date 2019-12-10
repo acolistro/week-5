@@ -80,17 +80,17 @@ export class Age {
     }
 
     venusBeyondAge() {
-    this.venusYearsPast = (this.earthAge - 75);
+    this.venusYearsPast = ((this.earthAge * 0.62)- (75 / 0.62));
     return this.venusYearsPast;
     }
 
     marsBeyondAge() {
-    this.marsYearsPast = (this.earthAge - 75);
+    this.marsYearsPast = ((this.earthAge * 1.88) - (75 / 1.88));
     return this.marsYearsPast;
     }
 
     jupiterBeyondAge() {
-    this.jupiterYearsPast = (this.earthAge - 75);
+    this.jupiterYearsPast = ((this.earthAge * 11.86)- (75 / 11.86));
     return this.jupiterYearsPast;
     }
 };
