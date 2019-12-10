@@ -1,5 +1,5 @@
 export class Age {
-  constructor(earthAge, mercuryAge, venusAge, marsAge, jupiterAge, earthYearsLeft, mercuryYearsLeft, venusYearsLeft, marsYearsLeft, jupiterYearsLeft) {
+  constructor(earthAge, mercuryAge, venusAge, marsAge, jupiterAge, earthYearsLeft, mercuryYearsLeft, venusYearsLeft, marsYearsLeft, jupiterYearsLeft, earthYearsPast) {
     this.earthAge = earthAge;
     this.mercuryAge = mercuryAge;
     this.venusAge = venusAge;
@@ -10,6 +10,7 @@ export class Age {
     this.venusYearsLeft = venusYearsLeft;
     this.marsYearsLeft = marsYearsLeft;
     this.jupiterYearsLeft = jupiterYearsLeft;
+    this.earthYearsPast = earthYearsPast;
   }
 
 //Test to ensure proper type
@@ -63,4 +64,9 @@ export class Age {
     this.jupiterYearsLeft = ((75 * 11.86) - (this.earthAge / 11.86));
     return this.jupiterYearsLeft;
   }
+
+    earthBeyondAge() {
+    this.earthYearsPast = (this.earthAge - 75);
+    return this.earthYearsPast;
+    }
 };
