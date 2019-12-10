@@ -75,7 +75,7 @@ export class Age {
     }
 
     mercuryBeyondAge() {
-    this.mercuryYearsPast = (this.earthAge - 75);
+    this.mercuryYearsPast = ((this.earthAge * 0.24) - (75 / 0.24));
     return this.mercuryYearsPast;
     }
 
