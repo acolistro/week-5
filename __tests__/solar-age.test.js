@@ -65,4 +65,11 @@ describe('Age', () => {
       const jupiterYearsLeft = age.jupiterExpect();
       expect(jupiterYearsLeft).toEqual((75 * 11.86) - (25 / 11.86));
     });
+
+//tests to determine years past life expectancy on earth
+    test('should determine years past life expectancy on Earth', () => {
+      const age = new Age(85)
+      const earthYearsPast = age.earthBeyondAge();
+      expect(earthYearsPast).toEqual(85 - 75);
+    });
 });

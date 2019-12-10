@@ -1,7 +1,7 @@
 {
   "name": "week-5",
   "version": "1.0.0",
-  "description": "",
+  "description": "Specs:",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode development",
@@ -30,7 +30,14 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
-    "jest": "^24.9.0",
     "popper.js": "^1.16.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acolistro/week-5.git"
+  },
+  "bugs": {
+    "url": "https://github.com/acolistro/week-5/issues"
+  },
+  "homepage": "https://github.com/acolistro/week-5#readme"
 }
